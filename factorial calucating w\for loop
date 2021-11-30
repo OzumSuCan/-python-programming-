@@ -1,0 +1,6 @@
+deger1 = int(input("Faktöriyelini Hesaplamak için sayı giriniz:"))
+deger = 1
+for i in range(deger1):
+    deger = deger * (i+1)
+ 
+print("Faktöriyel : ", deger)
