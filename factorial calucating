@@ -1,0 +1,10 @@
+list= [*range(0,101)]
+teksayılar=[]
+ciftsayılar=[]
+for i in list:
+    if i%2==0:
+        teksayılar.append(i)
+    else:
+        ciftsayılar.append(i)
+print("tek toplamı :", sum(teksayılar))
+print("çift toplamı :", sum(ciftsayılar))
