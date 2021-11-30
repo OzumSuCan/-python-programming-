@@ -1,0 +1,11 @@
+factor=1
+while True :
+    sayi = int(input('Lütfen negatif olmayan bir sayı giriniz.'))
+    if (sayi<=0):
+        print('Sayı geçersizdir. Lütfen yönergelere uyarak yeni sayı belirleyiniz.')
+    else:
+        for i in range(1,sayi+1):
+            factor = factor * i
+        
+        print('Faktöriyel:', factor)
+        break 
