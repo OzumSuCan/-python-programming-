@@ -1,0 +1,43 @@
+#Basit Düzeyde Hesap Makinesi
+#toplama işlevi
+def topla(x, y):
+    return x + y
+#çıkarma işlevi
+def çıkar(x, y):
+    return x - y
+#çarpma işlevi
+def çarp(x, y):
+    return x * y
+#bölme işlevi
+def böl(x,y):
+    return x / y
+
+print('Yapılacak işlemi seçiniz.')
+print('1. İşlem Toplama', "\n",'2. İşlem Çıkarma', "\n",'3. İşlem Çarpma', "\n",'4. İşlem Bölme','\n','5. İşlem Faktöriyel hesaplama')
+secim= int(input('Yapmak istediğiniz işlemin numarasını yazınız.'))
+
+if secim==1:
+    sayı1= int(input('İşlem yapmak istediğiniz ilk sayıyı giriniz.'))
+    sayı2= int(input('İşlem yapmak istediğiniz ikinci sayıyı giriniz.'))
+    print('Toplama işleminizin sonucu:' ,'\n', sayı1 ,'+', sayı2 ,'=', topla(sayı1,sayı2))
+elif secim==2:
+    sayı1= int(input('İşlem yapmak istediğiniz ilk sayıyı giriniz.'))
+    sayı2= int(input('İşlem yapmak istediğiniz ikinci sayıyı giriniz.'))
+    print('Çıkarma işleminizin sonucu:' ,'\n', sayı1 ,'-', sayı2 ,'=', çıkar(sayı1,sayı2))
+elif secim==3:
+    sayı1= int(input('İşlem yapmak istediğiniz ilk sayıyı giriniz.'))
+    sayı2= int(input('İşlem yapmak istediğiniz ikinci sayıyı giriniz.'))
+    print('Çarpma işleminizin sonucu:' ,'\n', sayı1 ,'*', sayı2 ,'=', çarp(sayı1,sayı2))
+elif secim==4:
+    sayı1= int(input('İşlem yapmak istediğiniz ilk sayıyı giriniz.'))
+    sayı2= int(input('İşlem yapmak istediğiniz ikinci sayıyı giriniz.'))
+    print('Bölme işleminizin sonucu:' ,'\n', sayı1 ,'/', sayı2 ,'=', böl(sayı1,sayı2))
+elif secim==5:
+    deger1 = int(input("Faktöriyelini Hesaplamak için sayı giriniz:"))
+    deger = 1
+    for i in range(deger1):
+        deger = deger * (i+1)
+    print("Faktöriyel : ", deger)
+
+else:
+    print('geçersiz değer.')
