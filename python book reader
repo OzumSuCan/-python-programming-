@@ -1,0 +1,15 @@
+import PyPDF2
+import pyttsx3
+#if you want to use a diffrent pdf file you can change this part. ''C:/Users/Win10/Downloads/python kitap okuma.pdf''
+hikaye= open('C:/Users/Win10/Downloads/python kitap okuma.pdf','rb')
+pdfOkuyucu = PyPDF2.PdfFileReader(hikaye)
+engine= pyttsx3.init()
+voices= engine.getProperty('voices')
+
+engine.setProperty('voice',voices[0].id)
+
+for sayfa_numarasi in range(0, pdfOkuyucu.numPages):
+    sayfa= pdfOkuyucu.getPage(sayfa_numarasi)
+    yazi= sayfa.extractText()
+    engine.say(yazi)
+    engine.runAndWait()
