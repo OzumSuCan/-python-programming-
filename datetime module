@@ -1,0 +1,25 @@
+import datetime
+an = datetime.datetime.now()
+microsecond= an.microsecond
+second= an.second
+minute= an.minute
+hour= an.hour
+day= an.day
+month= an.month
+year= an.year
+print('Saat modülümüze hoş geldiniz. Programımızın içerisinde bulunduğunuz mikrosaniye, saniye, dakika, saat, gün, ay, yıl öğrenmeniz için hazırlanmıştır.')
+YazdırmaBilgisi= input('Öğrenmek istediğiniz zaman diliminin adını yazınız.')
+if YazdırmaBilgisi ==  'mikrosaniye':
+    print(microsecond)
+elif YazdırmaBilgisi ==  'saniye':
+    print(second)
+elif YazdırmaBilgisi ==  'dakika':
+    print(minute)
+elif YazdırmaBilgisi ==  'saat':
+    print(hour)
+elif YazdırmaBilgisi ==  'gün':
+    print(day)
+elif YazdırmaBilgisi ==  'ay':
+    print(month)
+elif YazdırmaBilgisi ==  'yıl':
+    print(year)
